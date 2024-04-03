@@ -35,7 +35,8 @@ const addMockData = async () => {
     }
   };
 //defining routes path  
-app.use(express.static(path.resolve(__dirname,'build')));
+// app.use(express.static(path.resolve(__dirname,'build')));
+app.use(express.static('build'));
 app.use("/api/user", require("./Route/user"));
 app.use("/api/query", require("./Route/search"));
 app.use("/api/team", require("./Route/team"));
