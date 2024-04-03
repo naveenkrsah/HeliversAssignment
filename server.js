@@ -1,11 +1,13 @@
-const express = require('express')
-const cors = require('cors')
+const express = require('express');
+const cors = require('cors');
+const path = require('node:path');
 const mongoose= require('./database');
 const dotenv = require('dotenv');
 const data= require('./user.json');
 const USER=require('./Model/User');
 dotenv.config();
 const port = process.env.PORT || 8080;
+
 
 // configration
 const app = express(); 
@@ -33,7 +35,7 @@ const addMockData = async () => {
     }
   };
 //defining routes path  
-app.use(express.static('build'))
+app.use(express.static(path.resolve(__dirname('build')));
 app.use("/api/user", require("./Route/user"));
 app.use("/api/query", require("./Route/search"));
 app.use("/api/team", require("./Route/team"));
