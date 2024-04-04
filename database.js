@@ -9,6 +9,9 @@ const mongoUrl = process.env.REACT_APP_MONGODB_URL;
 const mongoURL = "mongodb+srv://coderdost:h9z77jIi5CDeT8Ne@cluster0.sld6bhl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 // const mongoURL = "mongodb+srv://coderdost:h9z77jIi5CDeT8Ne@cluster0.sld6bhl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
+
+
+// MongoDB connection options
 // MongoDB connection options
 const options = {
   useNewUrlParser: true,
