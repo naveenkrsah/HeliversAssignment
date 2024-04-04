@@ -51,11 +51,11 @@
         "dest": "server.js"
       },
       {
-        "src": "/cart",
+        "src": "/Teams",
         "dest": "server.js"
       },
       {
-        "src": "/cart/(.*)",
+        "src": "/Teams/(.*)",
         "dest": "server.js"
       },
       {
